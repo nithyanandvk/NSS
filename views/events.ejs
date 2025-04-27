@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="/css/events.css" />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dzsgjnpzh/image/upload/v1745750200/uofpduli9xgrwyu5cghb.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .activity-plan {
+        max-width: 1200px;
+        margin: 4rem auto 0 auto;
+        padding: 40px 30px;
+      }
+
+      .ah {
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: #003366;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+      }
+
+      .phase {
+        margin-bottom: 40px;
+        padding: 30px;
+        border-left: 6px solid #004080;
+        background: linear-gradient(135deg, #e6e8f0, #d0d4e2); /* Subtle gradient based on your background color */
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .phase:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .phase h2 {
+        margin-bottom: 25px;
+        color: #003366;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .week {
+        margin-bottom: 30px;
+        padding-left: 20px;
+        border-left: 4px solid #66a3ff;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .week:hover {
+        transform: translateX(5px);
+      }
+
+      .week h3 {
+        font-size: 1.3rem;
+        color: #004080;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .week p {
+        margin-top: 10px;
+        line-height: 1.7;
+        font-size: 1rem;
+        color: #444;
+        transition: color 0.3s ease;
+      }
+
+      .week:hover p {
+        color: #0052cc;
+      }
+
+      @media (max-width: 768px) {
+        .activity-plan {
+          padding: 20px;
+        }
+
+        .ah {
+          font-size: 2.4rem;
+        }
+
+        .phase h2 {
+          font-size: 1.6rem;
+        }
+
+        .week h3 {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <%- include("./includes/nav.ejs") %> <%- include("./includes/cursor.ejs") %>
+    <section class="activity-plan">
+      <h1 class="ah">Activity Plan</h1>
+      <div class="phase">
+        <h2>Research and Planning (2 Weeks)</h2>
+
+        <div class="week">
+          <h3>Week 01 - 28.09.2024</h3>
+          <p>
+            <strong>Activity:</strong> Conduct a survey to identify the specific
+            needs and challenges of rural villages regarding government schemes.
+            Gather data on various government schemes relevant to farmers,
+            women, healthcare, and childcare.
+          </p>
+          <p>
+            <strong>Activity-01:</strong> Collaborate with local government,
+            NGOs, government officials, and local bodies to streamline
+            collaboration for platform content and reach.
+          </p>
+          <p>
+            <strong>SDG:</strong> SDG 1, 17: Partnership for the Goals, No
+            Poverty
+          </p>
+        </div>
+
+        <div class="week">
+          <h3>Week 02 - 11.10.2024</h3>
+          <p>
+            <strong>Activity:</strong> Analyze survey data to define the project
+            scope and objectives. Prioritize which schemes will be featured on
+            the platform based on the needs assessment.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <h2>Design & Development Preparation (2 Weeks)</h2>
+
+        <div class="week">
+          <h3>Week 03 - 26.10.2024</h3>
+          <p>
+            <strong>Activity:</strong> Design the structure and layout of the
+            web platform, focusing on user-friendly navigation and accessibility
+            for users with low digital literacy. Develop a detailed sitemap and
+            wireframes for the platform.
+          </p>
+          <p>
+            <strong>Activity-02:</strong> Workshop with local health authorities
+            on hunger programs.
+          </p>
+          <p><strong>SDG:</strong> SDG 2: Zero Hunger</p>
+        </div>
+
+        <div class="week">
+          <h3>Week 04 - 08.11.2024</h3>
+          <p>
+            <strong>Activity:</strong> Promote rural education through
+            initiatives like the Mid-Day Meal Scheme, Sarva Shiksha Abhiyan, and
+            PMKVY to encourage regular school attendance and skill development.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <h2>Content Development</h2>
+
+        <div class="week">
+          <h3>Week 05 - 28.12.2024</h3>
+          <p>
+            <strong>Activity:</strong> Start developing the front-end of the web
+            platform, ensuring it is mobile-friendly and can work on low
+            bandwidth. Integrate local language support and accessibility
+            features.
+          </p>
+          <p>
+            <strong>Activity-03:</strong> Health Conferences with NGOs and
+            hospitals.
+          </p>
+          <p><strong>SDG:</strong> SDG 3: Good Health and Well-being</p>
+        </div>
+
+        <div class="week">
+          <h3>Week 06 - 10.01.2025</h3>
+          <p>
+            <!-- Content for Week 06 -->
+          </p>
+        </div>
+
+        <div class="week">
+          <h3>Week 07 - 25.01.2025</h3>
+          <p>
+            <strong>Activity:</strong> Complete front-end and back-end
+            development with SeIntegration for Android app for easy updates.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <h2>Platform Building</h2>
+
+        <div class="week">
+          <h3>Week 08 - 07.02.2025</h3>
+          <p>
+            <strong>Activity:</strong> Develop a section for farmers, detailing
+            agricultural schemes, subsidy information, crop insurance, and
+            modern farming techniques.
+          </p>
+        </div>
+
+        <div class="week">
+          <h3>Week 09 - 22.02.2025</h3>
+          <p>
+            <strong>Activity:</strong> Encourage sustainable practices like
+            organic farming through PKVY and promote renewable energy adoption.
+          </p>
+          <p>
+            <strong>Activity-04:</strong> Presentations to SHGs and rural
+            women’s groups.
+          </p>
+          <p><strong>SDG:</strong> SDG 5: Gender Equality</p>
+        </div>
+
+        <div class="week">
+          <h3>Week 10 - 07.03.2025</h3>
+          <p>
+            <strong>Activity:</strong> Develop sections for women’s empowerment
+            and childcare, including self-help group schemes, maternity
+            benefits, child nutrition programs, and education schemes.
+          </p>
+          <p>
+            Ensure all content is optimized for SEO to increase visibility in
+            search engines.
+          </p>
+        </div>
+
+        <div class="week">
+          <h3>Week 11 - 22.03.2025</h3>
+          <p>
+            <strong>Activity:</strong> Develop sections for farmers, including
+            agricultural schemes and modern farming techniques.
+          </p>
+          <p>
+            <strong>Activity-05:</strong> Innovative Workshops/Presentations for
+            rural tech solutions for the development of renewable energy for
+            farming methods.
+          </p>
+          <p><strong>SDG:</strong> SDG 13: Climate Action</p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <h2>Testing and Quality Assurance</h2>
+
+        <div class="week">
+          <h3>Week 12 - 29.03.2025</h3>
+          <p>
+            <strong>Activity:</strong> Gather feedback from a small group of
+            rural users to identify usability issues and areas for improvement.
+            Refine content and design based on feedback to enhance user
+            experience.
+          </p>
+          <p>
+            <strong>Activity-06:</strong> Campaign for plastic-free village
+            initiatives.
+          </p>
+          <p><strong>SDG:</strong> SDG 15: Life on Land</p>
+        </div>
+
+        <div class="week">
+          <h3>Week 13 - 11.04.2025</h3>
+          <p>
+            <strong>Activity:</strong> Mid-Day Meal Scheme to address child
+            malnutrition.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <h2>Launch Preparation</h2>
+
+        <div class="week">
+          <h3>Week 14 - 26.04.2025</h3>
+          <p>
+            <strong>Activity:</strong> Monitor platform performance and user
+            engagement. Set up a feedback loop to continually improve the
+            platform based on user needs and new government schemes.
+          </p>
+          <p>
+            <strong>Activity-07:</strong> Community Conference Paper for
+            Sustainable Cities and Communities.
+          </p>
+          <p>
+            <strong>SDG:</strong> SDG 4, 11: Quality Education, Sustainable
+            Cities and Communities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <br /><br />
+    <%- include("includes/contact.ejs") %>
+    <script>
+      // Optional small animation for page load
+      document.addEventListener("DOMContentLoaded", () => {
+        const phases = document.querySelectorAll(".phase");
+        phases.forEach((phase, index) => {
+          phase.style.opacity = 0;
+          phase.style.transform = "translateY(50px)";
+          setTimeout(() => {
+            phase.style.transition = "all 0.6s ease";
+            phase.style.opacity = 1;
+            phase.style.transform = "translateY(0)";
+          }, index * 200);
+        });
+      });
+    </script>
+  </body>
+</html>

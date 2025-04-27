@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e8f0;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+}
+
+.meet {
+  margin-top: 6rem;
+  font-size: 3rem;
+  text-align: center;
+  color: #1c1f4a;
+}
+
+.teamnav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.teamholder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamnav p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.tnav {
+  height: 90%;
+  background-color: #1c1f4a;
+  color: white;
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+
+.tnav:hover {
+  transition: 0.2s ease;
+  color: #1c1f4a;
+  border: 1px solid #1c1f4a;
+  background-color: white;
+}
+
+.tnav.active {
+  background-color: #ffa500;
+}
+
+.main-body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.main-body .team-div {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  margin: 1rem 2rem;
+  overflow: hidden;
+  position: relative;
+  height: 20rem;
+  width: 15rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-body .t-details {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-body .t-details h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.main-body .t-details p {
+  margin: 0;
+}
+
+.main-body .team-div .t-img {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main-body i {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: black;
+}
+
+.main-body {
+  display: flex;
+}
+
+#t-faculty {
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .main-body .team-div {
+    height: 13rem;
+    width: 9rem;
+    margin: 1rem 1rem;
+  }
+
+  .main-body .t-img {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  .main-body .t-details h3 {
+    font-size: 0.8rem;
+  }
+
+  .main-body .t-details p {
+    font-size: 0.7rem;
+  }
+
+  .main-body i {
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+  }
+
+  .teamnav {
+    width: 100%;
+  }
+
+  .teamnav p {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .tnav {
+    height: 90%;
+    width: 10rem;
+  }
+}

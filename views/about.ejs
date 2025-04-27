@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSS</title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dzsgjnpzh/image/upload/v1745750200/uofpduli9xgrwyu5cghb.png"
+    />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include("./includes/nav.ejs") %> <%- include("./includes/cursor.ejs") %>
+    <canvas id="starCanvas"></canvas>
+    <div class="top">
+      <div class="graphic">
+        <div class="logoo">
+          <div class="animated-background"></div>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="welcoming">
+          <h1 class="welcome">
+            WELCOME TO NSS <br />
+            NATIONAL SOCIAL SERVICE
+          </h1>
+        </div>
+      </div>
+
+      <div class="arrow bounce">
+        <a href="#about-info" style="color: #1c1f4a"
+          ><i class="fas fa-angle-double-down"></i
+        ></a>
+      </div>
+    </div>
+    <!-- <hr style="color: white; background-color: white; height: 0.2rem" /> -->
+    <div class="middle" id="about-info">
+      <div class="content-box">
+        <h1 style="text-align: center">ABOUT US</h1>
+        <div class="information">
+          <div>
+            The NSS Unit at MBU aims the involvement of students on a voluntary
+            basis in various activities of social service. Various social
+            service programmes are implemented through regular activities. As an
+            important component of education, the NSS is a part of the academic,
+            social, and personal lives of students at MBU. It enables the young
+            to actively give their contribute to the cause of the community and
+            the nation, therefore assisting in the development of their
+            personality. The NSS also equips students with the means to engage
+            in a give-and-take atmosphere when it comes to society and ensures
+            that the student learns to contribute and move ahead as a community.
+            The NSS Unit at MBU aims the involvement of students to voluntarily
+            in various activities of social service. Various social service
+            programmes are implemented through regular activities. National
+            Service Scheme (NSS) has been a part of MBU since its inception.
+            More than the hundred NSS volunteers are involved in social
+            activities in different areas of Tirupati and Chittoor District.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <hr style="color: white; background-color: white; height: 0.2rem" /> -->
+    <br /><br />
+    <%- include("includes/contact.ejs") %>
+    <script src="/js/about.js"></script>
+  </body>
+</html>
