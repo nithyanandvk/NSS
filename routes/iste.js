@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const isteController=require("../contollers/isteController.js");
+const isteController = require("../contollers/isteController.js");
 
 router.get("/", isteController.about);
 
@@ -11,4 +11,6 @@ router.get("/gallery", isteController.gallery);
 
 router.get("/team", isteController.team);
 
-module.exports=router;
+router.get("/govt", isteController.govt);
+
+module.exports = router;

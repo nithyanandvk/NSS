@@ -10,6 +10,10 @@ module.exports.gallery = async(req, res) => {
   res.render("gallery.ejs");
 };
 
+module.exports.govt = async(req, res) => {  
+  res.render("govt.ejs");
+};
+
 module.exports.ecstasy = async(req, res) => { 
   res.render("ecstasy.ejs");
 };
